@@ -2,9 +2,10 @@ import Navbar from "./Navbar";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 import NProgress from "nprogress";
+import Classnames from "classnames";
 
-const Layout = ({children, footer = true}) => {
-  
+const Layout = ({children, footer = true, dark = false, title }) => {
+
   const router = useRouter();
 
   useEffect(() => {
@@ -16,7 +17,10 @@ const Layout = ({children, footer = true}) => {
 
     router.events.on('routeChangeStart', handleRouteChange)
 
-    router.events.on('routeChangeComplete', () => NProgress.done())
+
+    router.events.on("routeChangeComplete", () => NProgress.done());
+
+    router.events.on("routeChangeError", () => NProgress.done());
 
     return () => {
       router.events.off('routeChangeStart', handleRouteChange)
@@ -24,10 +28,15 @@ const Layout = ({children, footer = true}) => {
   }, []);
 
   return (
-    <div>
+    <div className={Classnames({'bg-primary': dark, 'bg-light': !dark})}>
       <Navbar />
 
       <main className="container py-4">
+        {title && (
+          <h1 className={Classnames('text-center', {'text-light': dark})}>
+            {title}
+          </h1>
+        )}
         {children}
       </main>
 

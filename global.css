@@ -7,6 +7,10 @@ div#_next > div {
   padding: 0;
 }
 
+i {
+  color: black;
+}
+
 .overflow {
   height: 50%;
   overflow: hidden;

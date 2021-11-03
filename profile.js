@@ -1,24 +1,44 @@
 export const skills = [
   {
     name: "Javascript",
-    percentage: "90%"
+    percentage: "90%",
+    icon: "cib-javascript"
   },
   {
     name: "HTML",
-    percentage: "90%"
+    percentage: "90%",
+    icon: "cib-html5"
   },
   {
     name: "CSS",
-    percentage: "75%"
+    percentage: "75%",
+    icon: "cib-css3"
   },
   {
     name: "Nodejs",
-    percentage: "75%"
+    percentage: "75%",
+    icon: "cib-node-js"
   },
   {
     name: "Python",
-    percentage: "30%"
-  }
+    percentage: "30%",
+    icon: "cib-python"
+  },
+  {
+    name: "NextJs",
+    percentage: "75%",
+    icon: "cib-next-js"
+  },
+  {
+    name: "MySQL",
+    percentage: "65%",
+    icon: "cib-mysql"
+  },
+  {
+    name: "MongoDB",
+    percentage: "70%",
+    icon: "cib-mongodb"
+  },
 ]
 
 export const languages = [

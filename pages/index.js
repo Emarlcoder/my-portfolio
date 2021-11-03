@@ -25,10 +25,11 @@ const Index = () => (
                 I am a Backend Developer with a passion for learning new stuff.
                 I am currently working as a Backend Developer at Meraki Team.
                 I am proactively looking for new opportunities to learn and grow.
+                For any questions, please hit the button below.
               </p>
               <Link href="/contact">
-                <a className="btn btn-primary">
-                Hire me
+                <a className="btn btn-outline-light btn-primary">
+                Contact me
                 </a>
               </Link>
             </div>
@@ -62,7 +63,7 @@ const Index = () => (
             {skills.map((skill, index) => {
               return (
                 <div className="py-1">
-                  <h5 className="fw-bold text-light">{skill.name}</h5>
+                  <h5 className="fw-bold text-light"><i className={skill.icon}></i>  {skill.name}</h5>
                   <div className="progress" key={index}>
                     <div
                       className="progress-bar progress-bar-striped progress-bar-animated"
@@ -122,7 +123,7 @@ const Index = () => (
                     <h3 className="text-light">{name}</h3>
                     <p className="text-light">{description}</p>
                     <Link href="/projects">
-                      <a className="btn btn-dark">
+                      <a className="btn btn-outline-light btn-dark">
                         Know More
                       </a>
                       </Link>
