@@ -26,7 +26,7 @@ export const skills = [
   },
   {
     name: "NextJs",
-    percentage: "75%",
+    percentage: "55%",
     icon: "cib-next-js"
   },
   {
@@ -39,20 +39,28 @@ export const skills = [
     percentage: "70%",
     icon: "cib-mongodb"
   },
+  {
+    name: "React",
+    percentage: "50%",
+    icon: "cib-react"
+  }
 ]
 
 export const languages = [
   {
     name: "Spanish",
-    level: "Native"
+    level: "Native",
+    img: "http://purecatamphetamine.github.io/country-flag-icons/3x2/ES.svg"
   },
   {
     name: "English",
-    level: "Native"
+    level: "Native",
+    img: "http://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"
   },
   {
     name: "Finnish",
-    level: "Beginner"
+    level: "Beginner",
+    img: "https://purecatamphetamine.github.io/country-flag-icons/3x2/FI.svg"
   }
 ]
 
@@ -61,7 +69,7 @@ export const experiences = [
     company: "Meraki Team",
     position: "Backend Developer",
     from: 2021,
-    description:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consecttur veritatis eius cum iste nam aut quam quis assumenda asperiores praesentium!"
+    description: "Somos un equipo de desarrolladores web latinoamericanos que utilizamos las ultimas tecnologias del mercado."
   },
 ]
 

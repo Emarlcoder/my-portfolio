@@ -21,7 +21,7 @@ const GitHub = ({user, statusCode, dark}) => {
             <p><i className="cil-briefcase"></i> {user.company}</p>
             <p><i className="cil-location-pin"></i> {user.location}</p>
             <div className="list-group">
-              <a href={user.html_url} target="_blank" className={Classnames('btn', {'btn-primary': dark, 'btn-light': !dark})}>
+              <a href={user.html_url} target="_blank" className="btn btn-outline-light btn-primary">
                 <i className="fa fa-user"></i> Profile
               </a>
             </div>

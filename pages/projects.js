@@ -13,7 +13,7 @@ const PostCard = ({ project, dark }) => (
         <h1 className="text-light">{project.name}</h1>
         <p className="card-text">{project.description}</p>
         <Link href={project.link}>
-          <button className={Classnames('btn', 'btn-outline-light', {'btn-primary': dark, 'btn-light': !dark})}>Try it</button>
+          <button className="btn btn-outline-light btn-primary">Try it</button>
         </Link>
       </div>
     </div>
@@ -21,7 +21,7 @@ const PostCard = ({ project, dark }) => (
 )
 
 const Projects = () => (
-  <Layout footer={false} title="Projects" dark>
+  <Layout footer={false} title="Projects">
     <div className="row">
       {projects.map((project, index) => (
         <PostCard key={index} project={project} />

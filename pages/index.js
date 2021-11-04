@@ -46,9 +46,9 @@ const Index = () => (
             {languages.map((language, index) => {
               return (
                 <div className="py-3">
-                  <h5 className="fw-bold text-light">{language.name}</h5>
+                  <h4 className="fw-bold text-light"><img src={language.img} className="custom-icon"/> {language.name}</h4>
                   <div key={index}>
-                    <h6 className="fw-lighter text-light">{language.level}</h6>
+                    <h5 className="fw-lighter text-light">{language.level}</h5>
                   </div>
                 </div>
               );
@@ -63,7 +63,7 @@ const Index = () => (
             {skills.map((skill, index) => {
               return (
                 <div className="py-1">
-                  <h5 className="fw-bold text-light"><i className={skill.icon}></i>  {skill.name}</h5>
+                  <h4 className="fw-bold text-light"><i className={skill.icon}></i>  {skill.name}</h4>
                   <div className="progress" key={index}>
                     <div
                       className="progress-bar progress-bar-striped progress-bar-animated"
