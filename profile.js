@@ -41,7 +41,7 @@ export const skills = [
   },
   {
     name: "React",
-    percentage: "50%",
+    percentage: "45%",
     icon: "cib-react"
   }
 ]
