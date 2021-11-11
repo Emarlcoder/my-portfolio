@@ -1,49 +1,40 @@
 export const skills = [
   {
     name: "Javascript",
-    percentage: "90%",
-    icon: "cib-javascript"
+    icon: "cib-javascript text-primary"
   },
   {
     name: "HTML",
-    percentage: "90%",
-    icon: "cib-html5"
+    icon: "cib-html5 text-primary"
   },
   {
     name: "CSS",
-    percentage: "75%",
-    icon: "cib-css3"
+    icon: "cib-css3 text-primary"
   },
   {
     name: "Nodejs",
-    percentage: "75%",
-    icon: "cib-node-js"
-  },
-  {
-    name: "Python",
-    percentage: "30%",
-    icon: "cib-python"
-  },
-  {
-    name: "NextJs",
-    percentage: "55%",
-    icon: "cib-next-js"
+    icon: "cib-node-js text-primary"
   },
   {
     name: "MySQL",
-    percentage: "65%",
-    icon: "cib-mysql"
+    icon: "cib-mysql text-primary"
   },
   {
     name: "MongoDB",
-    percentage: "70%",
-    icon: "cib-mongodb"
+    icon: "cib-mongodb text-primary"
+  },
+  {
+    name: "NextJs",
+    icon: "cib-next-js text-primary"
   },
   {
     name: "React",
-    percentage: "45%",
-    icon: "cib-react"
-  }
+    icon: "cib-react text-primary"
+  },
+  {
+    name: "Python",
+    icon: "cib-python text-primary"
+  },
 ]
 
 export const languages = [
@@ -69,6 +60,7 @@ export const experiences = [
     company: "Meraki Team",
     position: "Backend Developer",
     from: 2021,
+    to: "Present",
     description: "Somos un equipo de desarrolladores web latinoamericanos que utilizamos las ultimas tecnologias del mercado."
   },
 ]

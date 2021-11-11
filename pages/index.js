@@ -64,14 +64,6 @@ const Index = () => (
               return (
                 <div className="py-1">
                   <h4 className="fw-bold text-light"><i className={skill.icon}></i>  {skill.name}</h4>
-                  <div className="progress" key={index}>
-                    <div
-                      className="progress-bar progress-bar-striped progress-bar-animated"
-                      role="progressbar"
-                      style={{ width: skill.percentage }}
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
                 </div>
               );
             })}
@@ -90,7 +82,7 @@ const Index = () => (
                       {position} at {company}
                     </h3>
                     <h5 className="fw-lighter text-light">
-                      {from}-{to}
+                      {from} - {to}
                     </h5>
                     <p className="text-light">{description}</p>
                   </li>

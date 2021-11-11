@@ -5,8 +5,8 @@ import Classnames from "classnames";
 
 const PostCard = ({ project, dark }) => (
   <div className="col-md-4">
-    <div className="card bg-dark text-light h-100 pb-1">
-      <div className="overflow">
+    <div className="card bg-dark text-light h-100">
+      <div className="overflow rounded">
         <img src={project.image} className="card-img-top"/>
       </div>
       <div className="card-body">

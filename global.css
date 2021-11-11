@@ -15,10 +15,6 @@ div#_next > div {
   overflow: hidden;
 }
 
-i {
-  color: black;
-}
-
 .overflow {
   height: 50%;
   overflow: hidden;
@@ -31,4 +27,22 @@ i {
 
 .overflow .card-img-top:hover {
   transform: scale(1.8);
+}
+
+.textarea{
+  resize: vertical;
+  max-height: 200px;
+}
+
+
+::-webkit-input-placeholder { /* Edge */
+  color: black !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black !important;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: black !important;
 }

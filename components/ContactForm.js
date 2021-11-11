@@ -1,31 +1,36 @@
-
+import{ init } from 'emailjs-com';
+init("user_SRT2TwH7scoeFetUCyUp8");
 
 const ContactForm = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_r66dc5p', 'template_53wyaxh', form.current, 'user_SRT2TwH7scoeFetUCyUp8')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <>
-      <h1 className="text-light">Contact Me!</h1>
+      <h1 className="text-light mb-3">Contact Me!</h1>
       <form
         className="row g-3"
         name="contact-form"
         method="POST"
-        data-netlify="true"
       >
-        <input
-          type="hidden"
-          name="portfolio-contact-form"
-          value="contact-form"
-        />
         <div className="col-md-6">
           <label for="firstName" className="form-label">
             <h5 className="fw-bold text-light">First Name</h5>
           </label>
-          <input type="text" className="form-control" id="firstName" required />
+          <input type="text" className="form-control border border-primary bg-light" id="firstName" required name="from_firstName" placeholder="First Name"/>
         </div>
         <div className="col-md-6">
           <label for="lastName" className="form-label">
             <h5 className="fw-bold text-light">Last Name</h5>
           </label>
-          <input type="text" className="form-control" id="lastName" required />
+          <input type="text" className="form-control border border-primary bg-light" id="lastName" required name="from_lastName" placeholder="Last Name"/>
         </div>
         <div className="col-md-8">
           <label for="emailInfo" className="form-label">
@@ -33,9 +38,11 @@ const ContactForm = () => {
           </label>
           <input
             type="email"
-            className="form-control"
+            className="form-control border border-primary bg-light"
             id="emailInfo"
             required
+            name="mail_mail"
+            placeholder="E-mail"
           />
         </div>
         <div className="col-md-4">
@@ -44,9 +51,10 @@ const ContactForm = () => {
           </label>
           <input
             type="text"
-            className="form-control"
+            className="form-control border border-primary bg-light"
             id="phoneNumber"
             placeholder="+54 (11) 1111-1111"
+            name="from_phone"
           />
         </div>
         <div className="col-md-12">
@@ -57,16 +65,16 @@ const ContactForm = () => {
             </h5>
           </label>
           <textarea
-            className="form-control"
+            className="form-control textarea border border-primary bg-light"
             id="comments"
             rows="3"
             required
+            name="message"
+            placeholder="Type your message here..."
           ></textarea>
         </div>
-        <div className="col-md-12">
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
+        <div className="col-md-12 d-grid w-50 position-relative top-100 start-50 translate-middle mt-4">
+          <input type="submit" value="Send" className="btn btn-primary btn-lg"/>
         </div>
       </form>
     </>
