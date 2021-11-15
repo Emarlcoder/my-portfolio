@@ -11,11 +11,14 @@ const Index = () => (
       <div className="col-md-12">
         <div className="card card-body bg-dark text-light">
           <div className="row">
-            <div className="col-md-4">
+            <div className="col-md-4 d-block">
               <Image
                 src={profilePic}
                 alt="profilePhoto"
-                className="img-fluid"
+                className="profilePhoto img-fluid rounded"
+                width={200}
+                height={200}
+                layout="responsive"
               />
             </div>
             <div className="col-md-8">
