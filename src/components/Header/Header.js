@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillLinkedin, AiFillMail, AiOutlineCodepenCircle } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillMail } from 'react-icons/ai';
+import { GiStarfighter } from 'react-icons/gi';
+
 
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span } from './HeaderStyles';
 
@@ -9,7 +11,7 @@ const Header = () =>  (
     <Div1>
       <Link href="/">
         <a style={{display: 'flex', alignItems: 'center', color: 'white', marginBottom: '20px'}}>
-          <AiOutlineCodepenCircle size='3rem'/> <Span>Ema Romero López</Span>
+          <GiStarfighter size='3rem'/> <Span>Ema Romero López</Span>
         </a>
       </Link>
     </Div1>
