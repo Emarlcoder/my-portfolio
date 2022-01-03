@@ -9,9 +9,9 @@ const Projects = () => (
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map(({ id, image, title, description, tags, source, visit }) => (
+      {projects.map(({ id, mainImage, title, description, tags, source, visit }) => (
         <BlogCard key={id}>
-          <Img src={image}/>
+          <Img src={mainImage}/>
           <TitleContent>
             <HeaderThree title>{title}</HeaderThree>
             <Hr />
