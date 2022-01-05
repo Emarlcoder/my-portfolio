@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Pin Me!',
     description: "Using React and Sanity I created a Pinterest-like site that allows users to pin their favorite images to their profile. Users can also search for images and pin them to their profile.",
-      mainImage: '/projects/pin-me/login.jpg',
+      mainImage: '/projects/pin-me/index.jpg',
       tags: ['Sanity', 'React'],
     source: 'https://github.com/Emarlcoder/pin-me',
     visit: 'https://pin-me.netlify.app  ',
