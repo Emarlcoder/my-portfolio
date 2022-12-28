@@ -9,8 +9,8 @@ const Footer = () => {
     <FooterWrapper>
       <LinkList>
         <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
-          <LinkItem href='tel:5411-3092-2409'>+54 (11) 3092-2409</LinkItem>
+          <LinkTitle>Phone</LinkTitle>
+          <LinkItem href='tel:59899449522'>+598 (9) 9 449 522</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
