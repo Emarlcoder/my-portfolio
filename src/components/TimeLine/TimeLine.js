@@ -68,7 +68,7 @@ const Timeline = () => {
       <SectionText>
         This is a little resume of my developer career from the beggining. 
         Is not up to date. the new and better version of this portfolio is
-        gonna be available on the end of January 2023.
+        gonna be available on the end of June 2023.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
